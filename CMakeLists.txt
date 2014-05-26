@@ -62,5 +62,6 @@ endif()
 
 if(TTVFS_BUILD_TESTS)
     add_subdirectory(test)
+    enable_testing()
 endif()
 
