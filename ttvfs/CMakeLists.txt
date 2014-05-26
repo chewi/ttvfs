@@ -33,6 +33,7 @@ set(ttvfs_HEADERS
 )
 
 add_library(ttvfs ${ttvfs_SRC} ${ttvfs_HEADERS})
+set_target_properties(ttvfs PROPERTIES VERSION 0.0.1 SOVERSION 0)
 
 install(TARGETS ttvfs DESTINATION lib${LIB_SUFFIX})
 install(FILES ${ttvfs_HEADERS} DESTINATION include/ttvfs)

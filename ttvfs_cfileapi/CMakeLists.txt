@@ -7,6 +7,7 @@ set(cfileapi_SRC
 include_directories(${TTVFS_INCLUDE_DIRS})
 
 add_library(ttvfs_cfileapi ${cfileapi_SRC})
+set_target_properties(ttvfs_cfileapi PROPERTIES VERSION 0.0.1 SOVERSION 0)
 
 target_link_libraries(ttvfs_cfileapi ttvfs)
 
